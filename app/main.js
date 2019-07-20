@@ -1,5 +1,5 @@
 import Vue from 'nativescript-vue'
-import Main from './components/Main'
+import Main from './components/Login'
 import store from './store';
 
 import VueDevtools from 'nativescript-vue-devtools'
@@ -11,6 +11,7 @@ if(TNS_ENV !== 'production') {
 Vue.config.silent = (TNS_ENV === 'production')
 
 Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer)
+Vue.registerElement('Gif', () => require('nativescript-gif').Gif)
 
 new Vue({
   store,
