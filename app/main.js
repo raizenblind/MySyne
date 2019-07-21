@@ -12,7 +12,8 @@ Vue.config.silent = (TNS_ENV === 'production')
 
 Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer)
 Vue.registerElement('Gif', () => require('nativescript-gif').Gif)
-
+Vue.registerElement('Toast', () => require('nativescript-toast').Toast)
+require( "nativescript-localstorage" );
 new Vue({
   store,
   render: h => h('frame', [h(Main)])
